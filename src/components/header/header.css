@@ -1,51 +1,202 @@
+.header-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  
+}
 
 .header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: "Montserrat", sans-serif;
-  }
+  width: 100%;
+  display: table;
+  /* position: fixed; */
+  padding: 0 2.5%;
+  top: 10px;
+  left: 0;
+  margin: 0 auto;
+  height: 90px;
+  box-sizing: border-box;
+}
 
-  .header-top {
-    display: flex;
-  }
+.desc {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
 
-  .logo {
-    width: 100px;
-    height: 100px;
-  }
+.gst-loc-tsh {
+  display: flex;
+  color: var(--color-subheading);
+  font-size: 13px;
+  margin-top: 5px;
+  line-height: 24px;
+  font-weight: 700;
+}
 
-  .header-nav{
-    display : flex;
-    justify-content : space-around;
-    align-items : center;
-    width : 80%;
-    height : 70px;
-    border-bottom : 2px solid black;
-  }
- 
-  .nav a{
-    text-decoration : none;
-    padding-bottom : 2px;
-    margin-right : 50px;
-    color : black;
-    font-weight : 550;
-    position : relative;
-    cursor : pointer;
-  }
+.gst-loc-tsh > div {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  line-height: normal;
+}
+.gst-loc-tsh svg {
+  width: 25px;
+}
+.gst-loc-tsh > div svg {
+  margin-right: 3px;
+}
+
+h1 {
+  color: #292929 !important;
+  font-weight: 700;
+  font-size: 26px;
+  margin-top: 5px;
+  line-height: 4px;
+}
+
+.header-top-left {
+  display: table-cell;
+  vertical-align: middle;
+  /* height: 90px; */
+
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  width: 95px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.header-top-right {
+  vertical-align: middle;
+  text-align: right;
+  display: table-cell;
+  font-size: 19px;
+  width: 402px;
   
-  .nav a::before{
-    position : absolute;
-    content : '';
-    top: 100%;
-    left : 0;
-    height : 2px;
-    width : 0%;
-    background : black;
-    transition : all ease 0.4s;
-  }
-  
-  .nav a:hover::before{
-    width : 100%;
-  }
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+}
+
+.call-cta {
+  cursor: pointer;
+  display: inline-block;
+  margin: 6px 4px 0 0;
+  vertical-align: top;
+}
+
+.call_cta {
+  padding: 4px 15px 2px;
+  color: #fff;
+  border-radius: 30px;
+  background-color: #3d3d3d;
+  display: block;
+}
+
+.call-icon {
+  display: inline-block;
+  background-position: 0 0;
+  width: 22px;
+  height: 24px;
+  fill: white;
+  margin: 6px 4px 0 0;
+  vertical-align: top;
+}
+
+.d55_call {
+  fill: #fff;
+  width: 22px;
+  height: 22px;
+  margin-bottom: -3px;
+}
+
+#Sms_cta {
+  text-align: center;
+  line-height: 1.1;
+  display: inline-block;
+  padding: 2px;
+}
+
+#Sms_cta span:first-of-type {
+  display: block;
+}
+
+#Sms_cta span:nth-of-type(2) {
+  display: block;
+  font-size: 12px;
+}
+
+.email-cta {
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 10px;
+  text-align: right;
+  font-size: 19px;
+  padding-top: 6.5px;
+}
+
+.email {
+  background-color: var(--color-orange);
+  padding: 8px 21px;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.email-icon {
+  background-image: url(https://tdw.imimg.com/template-tdw/d0055/sprite_grn_3.png);
+  vertical-align: middle;
+  height: 24px;
+  margin: 0 10px 2px 0;
+  display: inline-block;
+  background-position: -30px 0;
+  width: 24px;
+}
+
+.email-text {
+  font-size: 19px;
+  text-align: right;
+  cursor: pointer;
+  display: inline-block;
+  padding-top: 2px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  border-bottom: 2px solid black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav a {
+  text-decoration: none;
+  padding-bottom: 2px;
+  margin-right: 50px;
+  color: black;
+  font-weight: 550;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav a::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: black;
+  transition: all ease 0.4s;
+}
+
+.nav a:hover::before {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-subheading);
+}

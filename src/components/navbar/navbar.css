@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  align-items: center;
+    border-top: 0.5rem solid white;
+  background: rgb(249, 120, 33);
+  justify-content: right;
+}
+
+.navbar__item {
+  padding: 16px 16px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.navbar__item > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-family: Helvetica;
+  font-weight: 700;
+}
+
+.navbar__item>a:hover {
+    color: #3d3d3d;
+}
+
+
